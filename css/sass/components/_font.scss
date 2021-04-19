@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@font-face {
+  font-family:'CalibriRegular';
+  src: url('../../../fonts/CalibriRegular.eot');
+  src: url('../../../fonts/CalibriRegular.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/CalibriRegular.ttf') format('ttf'),
+  url('../../../fonts/CalibriRegular.woff2') format('woff2'),
+  url('../../../fonts/CalibriRegular.woff') format('woff'),
+  url('../../../fonts/CalibriRegular.svg#CalibriRegular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2083;
+}
+@font-face {
+  font-family:'CalibriBold';
+  src: url('../../../fonts/CalibriBold.eot');
+  src: url('../../../fonts/CalibriBold.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/CalibriBold.ttf') format('ttf'),
+  url('../../../fonts/CalibriBold.woff2') format('woff2'),
+  url('../../../fonts/CalibriBold.woff') format('woff'),
+  url('../../../fonts/CalibriBold.svg#CalibriBold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2083;
+}
+
+@font-face {
+  font-family: 'CalibriBoldItalic';
+  src: url('../../../fonts/CalibriBoldItalic.ttf') format('ttf');
+
+}

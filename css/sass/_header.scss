@@ -1,0 +1,82 @@
+header {
+    min-height: 136px;
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    margin: 0 auto;
+    background: $purple;
+    box-shadow: 0 11px 30px rgba(42, 64, 127, 0.26);
+    border-radius: 0 0 30px 30px;
+    position: relative;
+    .navbar-brand {
+        font-family: "CalibriBold", sans-serif;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        margin-right: 33px;
+        position: absolute;
+        left: 33px;
+        top: 12px;
+    }
+    .nav-top {
+        .nav-item {
+            margin-right: 40px;
+            .nav-link {
+                font-family: "Roboto", sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 14px;
+                letter-spacing: 0.02em;
+                color: #EBECF0;
+                padding: 17px 0;
+            }
+            &.active {
+                .nav-link {
+                    color: #EBECF0;
+                    border-bottom: 2px solid #fff;
+                    margin-bottom: -1px;
+                }
+            }
+
+        }
+    }
+    hr {
+        border-top: 1px solid rgba(242, 249, 255, 0.2);;
+    }
+    .fa-globe:before {
+        content: "\f0ac";
+        background-color: #fff;
+        color: $purple;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    .dropdown-box {
+        display: flex;
+        select {
+            background-color: transparent;
+            border: 0;
+            color: #fff;
+            option {
+                background-color: #5a6268;
+            }
+            &:focus {
+                border: 0;
+                outline: none;
+            }
+        }
+    }
+    .search-box {
+        .search_text {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-size: 33px;
+            line-height: 39px;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+    }
+}

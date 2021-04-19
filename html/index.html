@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BeeWEBTask</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+              integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/css/main.css">
+    </head>
+    <body id="body">
+        <header class="navigation-wrap mb-4">
+            <nav class="navbar navbar-expand-lg w-100 py-0 d-flex align-items-baseline">
+                <a class="navbar-brand" href="index.html">LOGO</a>
+                <div class="container container-1200">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="w-100">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <ul class="navbar-nav nav-top">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Staff List</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Vacation</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Calendar</a>
+                                    </li>
+                                </ul>
+                                <div class="avatar">
+                                    <img src="../img/main-avatar.png" alt="avatar" class="avatar">
+                                </div>
+                            </div>
+
+                            <hr class="mt-0 mb-2">
+                           <div class="d-flex justify-content-end">
+                               <div class="dropdown-box">
+                                   <i class="fas fa-globe mr-2"></i>
+                                   <select class="form-select" aria-label="Default select example">
+                                       <option selected>English</option>
+                                       <option value="1">ARM</option>
+                                       <option value="2">RUS</option>
+                                   </select>
+                               </div>
+                           </div>
+                            <div class="search-box">
+                                <div class="search_text">Search ...</div>
+                                <div class="form-group d-none">
+                                    <input type="search" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="container container-1200">
+                <div class="row d-flex align-items-center">
+                    <div class="main-select mr-5">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Marketing</option>
+                            <option value="1">Management</option>
+                            <option value="2">Development</option>
+                        </select>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                    <div class="checkbox switcher mr-4">
+                        <label for="switch">
+                            <input type="checkbox" id="switch" value="">
+                            <span><small></small></span>
+                        </label>
+                    </div>
+                    <div class="add-avatar">
+                        <div type="button"><img src="../img/Add_user.png" alt="" width="75" height="75"></div>
+                    </div>
+                </div>
+                <div id="scrollbar">
+                    <div class="scrollbar" id="style-7">
+                        <div class="force-overflow">
+                            <div class="py-5">
+                                <div class="d-flex cards my-5">
+                                    <div class="position-relative">
+                                        <div class="edit-button">
+                                            <div class="btn-group dropright">
+                                                <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="../img/pencil-simple%201.png" alt="">
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <ul class="list-unstyled m-0 p-0">
+                                                        <li><a href="#">Edit</a></li>
+                                                        <li class="delete-dropdown">
+                                                            <div class="btn-group dropright">
+                                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    Delete
+                                                                </a>
+                                                                <div class="dropdown-menu show">
+                                                                    <ul class="list-unstyled m-0 p-0">
+                                                                        <li><a href="#">Delete ?</a></li>
+                                                                        <li><a href="#">Yes No</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Archive</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3 blue-shadow">
+                                            <h5 class="card-title">Management</h5>
+                                            <div class="card-img-top" >
+                                                <img src="../img/oval%20(1).png" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="info_name">Jenny Wilson</div>
+                                                <div class="info_position">Hr Manager</div>
+                                                <div class="info_tel-number">077-777-777</div>
+                                                <div class="info_avatar">
+                                                    <img src="../img/User_profile.png" alt="user" width="50" height="50">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <div class="edit-button">
+                                            <div class="btn-group dropright">
+                                                <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="../img/pencil-simple%201.png" alt="">
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="#">Edit</a></li>
+                                                        <li class="delete-dropdown">
+                                                            <div class="btn-group dropright">
+                                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    Delete
+                                                                </a>
+                                                                <div class="dropdown-menu show">
+                                                                    <ul class="list-unstyled m-0 p-0">
+                                                                        <li><a href="#">Delete ?</a></li>
+                                                                        <li><a href="#">Yes No</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Archive</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3 inset-shadow">
+                                        <h5 class="card-title">Marketing</h5>
+                                        <div class="card-img-top" >
+                                            <img src="../img/oval%20(2).png" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="info_name">Marvin McKinney</div>
+                                            <div class="info_position">Marketing Specialist</div>
+                                            <div class="info_tel-number">077-777-777</div>
+                                            <div class="info_avatar pt-3">
+                                                <img src="../img/User_profile_selected.png" alt="user" width="30" height="30">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <div class="edit-button">
+                                            <div class="btn-group dropright">
+                                                <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="../img/pencil-simple%201.png" alt="">
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="#">Edit</a></li>
+                                                        <li class="delete-dropdown">
+                                                            <div class="btn-group dropright">
+                                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    Delete
+                                                                </a>
+                                                                <div class="dropdown-menu show">
+                                                                    <ul class="list-unstyled m-0 p-0">
+                                                                        <li><a href="#">Delete ?</a></li>
+                                                                        <li><a href="#">Yes No</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Archive</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3">
+                                            <h5 class="card-title">Development</h5>
+                                            <div class="card-img-top" >
+                                                <img src="../img/oval.png" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="info_name">Cameron Williamson</div>
+                                                <div class="info_position">React JS Developer</div>
+                                                <div class="info_tel-number">077-777-777</div>
+                                                <div class="info_avatar">
+                                                    <img src="../img/User_profile.png" alt="user" width="50" height="50">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <div class="edit-button">
+                                            <div class="btn-group dropright">
+                                                <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="../img/pencil-simple%201.png" alt="">
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="#">Edit</a></li>
+                                                        <li class="delete-dropdown">
+                                                            <div class="btn-group dropright">
+                                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    Delete
+                                                                </a>
+                                                                <div class="dropdown-menu show">
+                                                                    <ul class="list-unstyled m-0 p-0">
+                                                                        <li><a href="#">Delete ?</a></li>
+                                                                        <li><a href="#">Yes No</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Archive</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3">
+                                        <h5 class="card-title">Development</h5>
+                                        <div class="card-img-top" >
+                                            <img src="../img/oval%20(3).png" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="info_name">Ronald Richards</div>
+                                            <div class="info_position">QA</div>
+                                            <div class="info_tel-number">077-777-777</div>
+                                            <div class="info_avatar">
+                                                <img src="../img/User_profile.png" alt="user" width="50" height="50">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <div class="edit-button">
+                                            <div class="btn-group dropright">
+                                                <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="../img/pencil-simple%201.png" alt="">
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="#">Edit</a></li>
+                                                        <li class="delete-dropdown">
+                                                            <div class="btn-group dropright">
+                                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    Delete
+                                                                </a>
+                                                                <div class="dropdown-menu show">
+                                                                    <ul class="list-unstyled m-0 p-0">
+                                                                        <li><a href="#">Delete ?</a></li>
+                                                                        <li><a href="#">Yes No</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Archive</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3 blue-shadow">
+                                        <h5 class="card-title">Management</h5>
+                                        <div class="card-img-top" >
+                                            <img src="../img/oval%20(1).png" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="info_name">Jenny Wilson</div>
+                                            <div class="info_position">Hr Manager</div>
+                                            <div class="info_tel-number">077-777-777</div>
+                                            <div class="info_avatar">
+                                                <img src="../img/User_profile.png" alt="user" width="50" height="50">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <div class="edit-button">
+                                            <div class="btn-group dropright">
+                                                <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="../img/pencil-simple%201.png" alt="">
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="#">Edit</a></li>
+                                                        <li class="delete-dropdown">
+                                                            <div class="btn-group dropright">
+                                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    Delete
+                                                                </a>
+                                                                <div class="dropdown-menu show">
+                                                                    <ul class="list-unstyled m-0 p-0">
+                                                                        <li><a href="#">Delete ?</a></li>
+                                                                        <li><a href="#">Yes No</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Archive</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3 inset-shadow">
+                                        <h5 class="card-title">Marketing</h5>
+                                        <div class="card-img-top" >
+                                            <img src="../img/oval%20(2).png" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="info_name">Marvin McKinney</div>
+                                            <div class="info_position">Marketing Specialist</div>
+                                            <div class="info_tel-number">077-777-777</div>
+                                            <div class="info_avatar pt-3">
+                                                <img src="../img/User_profile_selected.png" alt="user" width="30" height="30">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <div class="edit-button">
+                                            <div class="btn-group dropright">
+                                                <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="../img/pencil-simple%201.png" alt="">
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="#">Edit</a></li>
+                                                        <li class="delete-dropdown">
+                                                            <div class="btn-group dropright">
+                                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    Delete
+                                                                </a>
+                                                                <div class="dropdown-menu show">
+                                                                    <ul class="list-unstyled m-0 p-0">
+                                                                        <li><a href="#">Delete ?</a></li>
+                                                                        <li><a href="#">Yes No</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Archive</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3">
+                                            <h5 class="card-title">Development</h5>
+                                            <div class="card-img-top" >
+                                                <img src="../img/oval.png" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="info_name">Cameron Williamson</div>
+                                                <div class="info_position">React JS Developer</div>
+                                                <div class="info_tel-number">077-777-777</div>
+                                                <div class="info_avatar">
+                                                    <img src="../img/User_profile.png" alt="user" width="50" height="50">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <div class="edit-button">
+                                            <div class="btn-group dropright">
+                                                <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="../img/pencil-simple%201.png" alt="">
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="#">Edit</a></li>
+                                                        <li class="delete-dropdown">
+                                                            <div class="btn-group dropright">
+                                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    Delete
+                                                                </a>
+                                                                <div class="dropdown-menu show">
+                                                                    <ul class="list-unstyled m-0 p-0">
+                                                                        <li><a href="#">Delete ?</a></li>
+                                                                        <li><a href="#">Yes No</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Archive</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3">
+                                        <h5 class="card-title">Development</h5>
+                                        <div class="card-img-top" >
+                                            <img src="../img/oval%20(3).png" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="info_name">Ronald Richards</div>
+                                            <div class="info_position">QA</div>
+                                            <div class="info_tel-number">077-777-777</div>
+                                            <div class="info_avatar">
+                                                <img src="../img/User_profile.png" alt="user" width="50" height="50">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="date-calendar my-5">
+                                    <div class="date-weeks">
+                                        <div class="d-flex justify-content-between overflow-hidden">
+                                            <div class="title title-width">Date</div>
+                                            <div class="d-flex">
+                                                <ul class="d-flex list-unstyled">
+                                                    <li>Mo</li>
+                                                    <li>Tu</li>
+                                                    <li>We</li>
+                                                    <li>Th</li>
+                                                    <li>Fr</li>
+                                                    <li>Sa</li>
+                                                    <li>Su</li>
+                                                </ul>
+                                                <ul class="d-flex list-unstyled">
+                                                    <li>Mo</li>
+                                                    <li>Tu</li>
+                                                    <li>We</li>
+                                                    <li>Th</li>
+                                                    <li>Fr</li>
+                                                    <li>Sa</li>
+                                                    <li>Su</li>
+                                                </ul>
+                                                <ul class="d-flex list-unstyled">
+                                                    <li>Mo</li>
+                                                    <li>Tu</li>
+                                                    <li>We</li>
+                                                    <li>Th</li>
+                                                    <li>Fr</li>
+                                                    <li>Sa</li>
+                                                    <li>Su</li>
+                                                </ul>
+                                                <ul class="d-flex list-unstyled">
+                                                    <li>Mo</li>
+                                                    <li>Tu</li>
+                                                    <li>We</li>
+                                                    <li>Th</li>
+                                                    <li>Fr</li>
+                                                    <li>Sa</li>
+                                                    <li>Su</li>
+                                                </ul>
+                                                <ul class="d-flex list-unstyled">
+                                                    <li>Mo</li>
+                                                    <li>Tu</li>
+                                                    <li>We</li>
+                                                    <li>Th</li>
+                                                    <li>Fr</li>
+                                                    <li>Sa</li>
+                                                    <li>Su</li>
+                                                </ul>
+                                                <ul class="d-flex list-unstyled">
+                                                    <li>Mo</li>
+                                                    <li>Tu</li>
+                                                    <li>We</li>
+                                                    <li>Th</li>
+                                                    <li>Fr</li>
+                                                    <li>Sa</li>
+                                                    <li>Su</li>
+                                                </ul>
+                                                <ul class="d-flex list-unstyled">
+                                                    <li>Mo</li>
+                                                    <li>Tu</li>
+                                                    <li>We</li>
+                                                    <li>Th</li>
+                                                    <li>Fr</li>
+                                                    <li>Sa</li>
+                                                    <li>Su</li>
+                                                </ul>
+                                                <ul class="d-flex list-unstyled">
+                                                    <li>Mo</li>
+                                                    <li>Tu</li>
+                                                    <li>We</li>
+                                                    <li>Th</li>
+                                                    <li>Fr</li>
+                                                    <li>Sa</li>
+                                                    <li>Su</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between date-days mb-4">
+                                        <div class="d-flex align-items-center title-width">
+                                            <div class="dark-logo">
+                                                logo
+                                            </div>
+                                            <div class="title">company name</div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <ul class="d-flex list-unstyled">
+                                                <li>1</li>
+                                                <li class="bg_blue">2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                            </ul>
+                                            <ul class="d-flex list-unstyled">
+                                                <li>8</li>
+                                                <li>9</li>
+                                                <li>10</li>
+                                                <li>11</li>
+                                                <li>12</li>
+                                                <li>13</li>
+                                                <li>14</li>
+                                            </ul>
+                                            <ul class="d-flex list-unstyled">
+                                                <li>15</li>
+                                                <li>16</li>
+                                                <li>17</li>
+                                                <li>18</li>
+                                                <li>19</li>
+                                                <li>20</li>
+                                                <li>21</li>
+                                            </ul>
+                                            <ul class="d-flex list-unstyled">
+                                                <li>22</li>
+                                                <li>23</li>
+                                                <li>24</li>
+                                                <li>25</li>
+                                                <li>26</li>
+                                                <li>27</li>
+                                                <li>28</li>
+                                            </ul>
+                                            <ul class="d-flex list-unstyled">
+                                                <li>29</li>
+                                                <li>30</li>
+                                                <li>31</li>
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between date-days mb-4">
+                                        <div class="d-flex align-items-center title-width">
+                                            <div class="mr-3">
+                                                <img src="../img/oval%20(1).png" alt="" width="46" height="46">
+                                            </div>
+                                            <div class="title">Jenny Wilson</div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <ul class="d-flex list-unstyled">
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                            </ul>
+                                            <ul class="d-flex list-unstyled">
+                                                <li class="bg_rose">8</li>
+                                                <li>9</li>
+                                                <li>10</li>
+                                                <li>11</li>
+                                                <li>12</li>
+                                                <li>13</li>
+                                                <li>14</li>
+                                            </ul>
+                                            <ul class="d-flex list-unstyled">
+                                                <li>15</li>
+                                                <li>16</li>
+                                                <li>17</li>
+                                                <li class="popover">18</li>
+                                                <li>19</li>
+                                                <li>20</li>
+                                                <li>21</li>
+                                            </ul>
+                                            <ul class="d-flex list-unstyled">
+                                                <li>22</li>
+                                                <li class="bg_light_yellow">23</li>
+                                                <li>24</li>
+                                                <li class="sub-circle-left">25</li>
+                                                <li class="sub-circle-right">26</li>
+                                                <li>27</li>
+                                                <li>28</li>
+                                            </ul>
+                                            <ul class="d-flex list-unstyled">
+                                                <li>29</li>
+                                                <li class="bg_rose">30</li>
+                                                <li>31</li>
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="popover__content active">
+                                        <div class="note_one d-flex justify-content-between align-items-center px-3">
+                                            <div class="d-flex align-items-center flex-1">
+                                                <div class="not-working-day">24</div>
+                                                <div class="popover__message ml-2">Non-working day</div>
+                                            </div>
+                                            <img src="../img/pencil-simple%205.png" alt="" width="11" height="12">
+                                        </div>
+                                        <div class="note_two d-flex justify-content-between align-items-center px-3">
+                                            <div class="d-flex align-items-center flex-1">
+                                                <img src="../img/Group.png" alt="" height="11" width="13">
+                                                <div class="popover__message ml-2">Team building</div>
+                                            </div>
+                                            <img src="../img/pencil-simple%205.png" alt="" width="11" height="12">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            $( document ).ready(function() {
+                $('.nav-item').click(function () {
+                    $('.nav-item').removeClass('active');
+                    $(this).addClass('active');
+                });
+                $('.popover').click(function () {
+                    let content = $('.popover__content');
+                    content.toggleClass("active");
+                });
+                $('.search_text').click(function () {
+                    $('.search-box .form-group').toggleClass("d-none");
+                });
+            });
+        </script>
+    </body>
+</html>
